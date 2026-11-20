@@ -1,0 +1,26 @@
+{
+  "description": "Confusion matrix of Lawgorithm full agent on 50 gold clauses (Table 6)",
+  "matrix": {
+    "Gold_RED": {
+      "Pred_RED": 13,
+      "Pred_AMBER": 1,
+      "Pred_GREEN": 0,
+      "Total": 14
+    },
+    "Gold_AMBER": {
+      "Pred_RED": 1,
+      "Pred_AMBER": 13,
+      "Pred_GREEN": 1,
+      "Total": 15
+    },
+    "Gold_GREEN": {
+      "Pred_RED": 0,
+      "Pred_AMBER": 1,
+      "Pred_GREEN": 20,
+      "Total": 21
+    }
+  },
+  "total_clauses": 50,
+  "diagonal_correct": 46,
+  "accuracy": 0.92
+}

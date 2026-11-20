@@ -1,0 +1,443 @@
+{
+  "summary": {
+    "total_clauses": 50,
+    "observed_raw_agreement_pct": 94.0,
+    "observed_raw_agreement_fraction": "47/50",
+    "chance_agreement_pe": 0.3696,
+    "cohen_kappa_unweighted": 0.9048,
+    "standard_error": 0.0533,
+    "confidence_interval_95": [
+      0.8004,
+      1.0
+    ],
+    "linear_weighted_kappa": 0.9322,
+    "quadratic_weighted_kappa": 0.957,
+    "benchmark_tier_landis_koch_1977": "Almost Perfect Agreement (> 0.81)"
+  },
+  "confusion_matrix": {
+    "labels_order": [
+      "GREEN",
+      "AMBER",
+      "RED"
+    ],
+    "rows_annotator_1": {
+      "GREEN": {
+        "GREEN": 24,
+        "AMBER": 0,
+        "RED": 0
+      },
+      "AMBER": {
+        "GREEN": 1,
+        "AMBER": 11,
+        "RED": 0
+      },
+      "RED": {
+        "GREEN": 0,
+        "AMBER": 2,
+        "RED": 12
+      }
+    }
+  },
+  "agreement_with_established_gold_standard": {
+    "annotator_1_vs_gold": {
+      "accuracy_pct": 86.0,
+      "correct_fraction": "43/50",
+      "cohen_kappa": 0.784
+    },
+    "annotator_2_vs_gold": {
+      "accuracy_pct": 80.0,
+      "correct_fraction": "40/50",
+      "cohen_kappa": 0.6898
+    }
+  },
+  "disagreements_analysis": [
+    {
+      "clause_id": "emp_indemnity_01",
+      "gold_label": "AMBER",
+      "annotator_1": {
+        "label": "AMBER",
+        "full_response": "AMBER \u2014 Lawful under Section 124 of the Indian Contract Act and properly limited to gross negligence or willful misconduct, but unilateral and uncapped in an employment context."
+      },
+      "annotator_2": {
+        "label": "GREEN",
+        "reason": "The indemnity is limited to gross negligence or wilful misconduct and to direct losses, which is a market-standard scope. Borderline AMBER because it is one-way and has no cap."
+      }
+    },
+    {
+      "clause_id": "rental_lockin_01",
+      "gold_label": "RED",
+      "annotator_1": {
+        "label": "RED",
+        "full_response": "RED \u2014 An absolute 24-month prohibition on tenant termination \"regardless of circumstances\" without an exit mechanism or force majeure/breach exception conflicts with Sections 56 and 74 of the Contract Act and Section 108(e) of the Transfer of Property Act."
+      },
+      "annotator_2": {
+        "label": "AMBER",
+        "reason": "Lock-ins are lawful, but this one binds only the tenant, is long, and says \"regardless of circumstances\". That wording cannot override frustration (s.56) or the tenant's remedies if the landlord breaches, so enforcement is limited to reasonable damages."
+      }
+    },
+    {
+      "clause_id": "rental_maintenance_02",
+      "gold_label": "RED",
+      "annotator_1": {
+        "label": "RED",
+        "full_response": "RED \u2014 Shifting 100% of structural repairs, roof leakages, and municipal property taxes onto the tenant contravenes statutory landlord obligations under the Transfer of Property Act and Model Tenancy Act."
+      },
+      "annotator_2": {
+        "label": "AMBER",
+        "reason": "Parties can contract around the default rules on repairs, so this is lawful but highly one-sided. Structural repairs and property tax are normally the owner's liability (the owner stays liable to the municipality regardless of the contract)."
+      }
+    }
+  ],
+  "per_clause_annotations": [
+    {
+      "clause_id": "emp_noncompete_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_noncompete_02",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_salary_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_penalty_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_penalty_02",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_indemnity_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "GREEN",
+      "agreed": false
+    },
+    {
+      "clause_id": "emp_termination_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_termination_02",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_training_bond_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_probation_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_confidentiality_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_nonsolicit_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_ip_assignment_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_ip_overreach_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_leave_policy_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_gratuity_forfeiture_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_deposit_01",
+      "gold_label": "RED",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_deposit_02",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_notice_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_notice_02",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_lockin_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "AMBER",
+      "agreed": false
+    },
+    {
+      "clause_id": "rental_lockin_02",
+      "gold_label": "AMBER",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_eviction_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_eviction_02",
+      "gold_label": "AMBER",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_maintenance_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_maintenance_02",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "AMBER",
+      "agreed": false
+    },
+    {
+      "clause_id": "rental_subletting_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_inspection_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_unrestricted_entry_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_lease_definition_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_commercial_misuse_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_escalation_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_escalation_02",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "general_severability_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "general_force_majeure_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "general_waiver_of_rights_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "general_arbitration_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "hard_no_relevant_law_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "hard_ambiguous_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "hard_wrong_jurisdiction_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "hard_conflicting_scope_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_notice_pay_deduction_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_lockin_liquidated_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_garden_leave_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_painting_charge_01",
+      "gold_label": "AMBER",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_relocation_expense_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "AMBER",
+      "annotator_2_label": "AMBER",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_late_fee_01",
+      "gold_label": "RED",
+      "annotator_1_label": "RED",
+      "annotator_2_label": "RED",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_statutory_provident_fund_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "rental_electricity_water_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    },
+    {
+      "clause_id": "emp_whistleblower_protection_01",
+      "gold_label": "GREEN",
+      "annotator_1_label": "GREEN",
+      "annotator_2_label": "GREEN",
+      "agreed": true
+    }
+  ]
+}

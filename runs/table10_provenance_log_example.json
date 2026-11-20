@@ -1,0 +1,73 @@
+{
+  "table_reference": "Table 10: Illustrative Provenance and Audit Log Entry",
+  "field_mapping": {
+    "Clause": "The Employee agrees that for a period of 12 months following termination of employment, they shall not, directly or indirectly, engage in any business that competes with the Company within India.",
+    "Model": "gpt-oss-120b on Groq; verified with qwen3.8-27b; run date Nov 2026",
+    "Retrieval": "Indian Contract Act, 1872, Section 27 (agreement in restraint of trade)",
+    "Output_Explanation": "If you leave your job, you promise not to work for or start a competing business anywhere in India for the next 12 months. This restriction applies to any business that competes with your current employer.",
+    "Risk_Level": "Red",
+    "Confidence_Gamma": 0.48,
+    "Statutory_Source": [
+      "indian_contract_act__1872_section_27"
+    ],
+    "Routing_Decision": "R = Red -> Human Review Queue (Mandatory for all Red clauses)"
+  },
+  "raw_provenance_object": {
+    "clause_id": "emp_noncompete_01",
+    "clause_title": null,
+    "plain_explanation": "If you leave your job, you promise not to work for or start a competing business anywhere in India for the next 12 months. This restriction applies to any business that competes with your current employer.",
+    "risk_level": "red",
+    "legal_assessment": "This clause is a post-employment non-compete agreement. Under Indian law, agreements that prevent a person from exercising a lawful profession or business after their employment ends are generally void and unenforceable. While restrictions during active employment are valid, this specific 12-month post-termination ban is likely illegal.",
+    "recommended_action": "Ask to remove this clause entirely, as it is likely unenforceable. If the company insists on keeping it, consult a lawyer to understand the specific risks, but be aware that Indian courts typically strike down such post-employment restraints.",
+    "consequence": "the clause is likely unenforceable, but the company could still try to use it to threaten you or stop you from finding new work",
+    "clause_type": {
+      "clause_type": "non_compete",
+      "label": "Non-compete",
+      "confidence": 0.973
+    },
+    "claims": [
+      {
+        "claim": "Agreements that restrain a person from exercising a lawful profession, trade, or business after employment ends are void under Section 27 of the Indian Contract Act, 1872.",
+        "supporting_source_ids": [
+          "indian_contract_act__1872_section_27"
+        ]
+      }
+    ],
+    "retrieved_source_ids": [
+      "indian_contract_act__1872_section_27"
+    ],
+    "cited_sources": [
+      {
+        "id": "indian_contract_act__1872_section_27",
+        "law": "Indian Contract Act, 1872",
+        "section": "27",
+        "title": "Agreement in restraint of trade, void",
+        "jurisdiction": "India",
+        "official_source": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "text": "Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from\nexercising a lawful profession, trade or business of any kind, is to that extent void.\n_Exception_ 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One\nwho sells the good-will of a business may agree with the buyer to refrain from carrying on a similar business, within specified local limits, so long as the buyer, or any person deriving title to the good-will from him, carries on a like business therein, provided that such limits appear to the Court reasonable, regard being had to the nature of the business."
+      }
+    ],
+    "retrieval_score": 0.0,
+    "grounding_score": 0.5,
+    "citation_valid": true,
+    "consistency_score": 1.0,
+    "llm_confidence": 0.95,
+    "confidence": 0.48,
+    "grounding_status": "partially_supported",
+    "status": "grounded",
+    "review_flags": [],
+    "verification_status": "pending",
+    "removed_citations": [],
+    "withheld_claims": [],
+    "claim_verdicts": [
+      "PARTIALLY_SUPPORTED"
+    ],
+    "decision": "expert",
+    "latency_s": 9.742075416001171,
+    "gold_risk_label": "red",
+    "gold_expected_sources": [
+      "indian_contract_act__1872_section_27"
+    ],
+    "gold_expected_status": "grounded"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "tau_chosen_on_dev": 0.56,
+  "dev": {
+    "tau": 0.56,
+    "clauses": 24,
+    "released": 5,
+    "routed_to_review": 19,
+    "released_correct": [
+      5,
+      5
+    ],
+    "released_accuracy": 1.0,
+    "released_accuracy_ci": [
+      0.5655085052479191,
+      1.0
+    ],
+    "released_under_flagged": []
+  },
+  "test": {
+    "tau": 0.56,
+    "clauses": 26,
+    "released": 10,
+    "routed_to_review": 16,
+    "released_correct": [
+      8,
+      10
+    ],
+    "released_accuracy": 0.8,
+    "released_accuracy_ci": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "released_under_flagged": [
+      "emp_penalty_01",
+      "general_arbitration_01"
+    ]
+  },
+  "paper_threshold_0.95_test": {
+    "tau": 0.95,
+    "clauses": 26,
+    "released": 3,
+    "routed_to_review": 23,
+    "released_correct": [
+      3,
+      3
+    ],
+    "released_accuracy": 1.0,
+    "released_accuracy_ci": [
+      0.43849391955098227,
+      1.0
+    ],
+    "released_under_flagged": []
+  }
+}

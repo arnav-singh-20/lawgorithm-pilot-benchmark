@@ -1,0 +1,142 @@
+{
+  "description": "Manifest of the 2,273 statutory sections across 26 Acts and Model Tenancy Act (Table 2)",
+  "total_acts": 27,
+  "total_sections": 2273,
+  "acts": [
+    {
+      "statute_name": "Indian Contract Act, 1872",
+      "section_count": 208,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Transfer of Property Act, 1882",
+      "section_count": 140,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Registration Act, 1908",
+      "section_count": 107,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Indian Stamp Act, 1899",
+      "section_count": 95,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Specific Relief Act, 1963",
+      "section_count": 46,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Limitation Act, 1963",
+      "section_count": 32,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Arbitration and Conciliation Act, 1996",
+      "section_count": 106,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Delhi Rent Control Act, 1958",
+      "section_count": 67,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Code on Wages, 2019",
+      "section_count": 69,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Code on Social Security, 2020",
+      "section_count": 163,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+      "section_count": 30,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Copyright Act, 1957",
+      "section_count": 104,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Information Technology Act, 2000",
+      "section_count": 124,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Negotiable Instruments Act, 1881",
+      "section_count": 155,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Consumer Protection Act, 2019",
+      "section_count": 106,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Apprentices Act, 1961",
+      "section_count": 42,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Rights of Persons with Disabilities Act, 2016",
+      "section_count": 102,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Industrial Relations Code, 2020",
+      "section_count": 104,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Occupational Safety, Health and Working Conditions Code, 2020",
+      "section_count": 143,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Karnataka Rent Act, 1999",
+      "section_count": 70,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Tamil Nadu Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017",
+      "section_count": 47,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "West Bengal Premises Tenancy Act, 1997",
+      "section_count": 43,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Maharashtra Rent Control Act, 1999",
+      "section_count": 56,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Uttar Pradesh Regulation of Urban Premises Tenancy Act, 2021",
+      "section_count": 18,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Kerala Buildings (Lease and Rent Control) Act, 1965",
+      "section_count": 34,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Andhra Pradesh Shops and Establishments Act, 1988",
+      "section_count": 59,
+      "category": "Central/State Act"
+    },
+    {
+      "statute_name": "Model Tenancy Act, 2021",
+      "section_count": 3,
+      "category": "Model Act Benchmark"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "risk_accuracy": 0.92,
+  "grounding_precision": 0.9375,
+  "claim_level_hallucination_rate": 0.0,
+  "abstention_accuracy": 1.0,
+  "confusion_matrix": {
+    "red": {
+      "red": 13,
+      "amber": 1,
+      "green": 0
+    },
+    "amber": {
+      "red": 1,
+      "amber": 13,
+      "green": 1
+    },
+    "green": {
+      "red": 0,
+      "amber": 1,
+      "green": 20
+    }
+  },
+  "per_class": {
+    "red": {
+      "n": 14,
+      "precision": 0.9285714285714286,
+      "recall": 0.9285714285714286,
+      "f1": 0.9285714285714286,
+      "recall_ci": [
+        0.6853073044604219,
+        0.9872781138877085
+      ]
+    },
+    "amber": {
+      "n": 15,
+      "precision": 0.8666666666666667,
+      "recall": 0.8666666666666667,
+      "f1": 0.8666666666666667,
+      "recall_ci": [
+        0.6211750079348376,
+        0.9626395301086407
+      ]
+    },
+    "green": {
+      "n": 21,
+      "precision": 0.9523809523809523,
+      "recall": 0.9523809523809523,
+      "f1": 0.9523809523809523,
+      "recall_ci": [
+        0.7733018341376452,
+        0.9915442305280766
+      ]
+    },
+    "macro": {
+      "precision": 0.9158730158730158,
+      "recall": 0.9158730158730158,
+      "f1": 0.9158730158730158
+    }
+  },
+  "raw_fabricated_citation_rate": 0.0,
+  "fabricated_citation_rate": 0.0,
+  "skipped_clause_ids": [],
+  "num_predictions": 50,
+  "num_gold": 50,
+  "counts": {
+    "risk_correct": [
+      46,
+      50
+    ],
+    "grounding_hits": [
+      60,
+      64
+    ],
+    "raw_fabricated_clauses": [
+      0,
+      50
+    ],
+    "released_fabricated_clauses": [
+      0,
+      50
+    ],
+    "raw_unsupported_claims": [
+      0,
+      75
+    ],
+    "released_unsupported_claims": [
+      0,
+      75
+    ],
+    "abstention_correct": [
+      3,
+      3
+    ]
+  },
+  "wilson_95": {
+    "risk_correct": [
+      0.8116149745493629,
+      0.9684509967442093
+    ],
+    "grounding_hits": [
+      0.8500230335750312,
+      0.9754291963252071
+    ],
+    "raw_fabricated_clauses": [
+      0.0,
+      0.07135003417431873
+    ],
+    "released_fabricated_clauses": [
+      0.0,
+      0.07135003417431873
+    ],
+    "raw_unsupported_claims": [
+      0.0,
+      0.04872554590470005
+    ],
+    "released_unsupported_claims": [
+      0.0,
+      0.04872554590470005
+    ],
+    "abstention_correct": [
+      0.43849391955098227,
+      1.0
+    ]
+  },
+  "raw_claim_unsupported_rate": 0.0,
+  "released_claim_unsupported_rate": 0.0,
+  "mean_latency_s": 24.5,
+  "token_usage_by_model": {
+    "qwen/qwen3.8-27b": {
+      "prompt_tokens": 178153,
+      "completion_tokens": 18845,
+      "requests": 86
+    }
+  },
+  "clauses_routed_to_review": 35,
+  "ece": 0.0412,
+  "brier": 0.0894,
+  "avg_flesch_kincaid_grade_improvement": 4.01,
+  "misclassified": [
+    {
+      "clause_id": "emp_penalty_01",
+      "gold": "red",
+      "pred": "amber",
+      "confidence": 0.6,
+      "status": "human_review_required"
+    },
+    {
+      "clause_id": "rental_escalation_01",
+      "gold": "green",
+      "pred": "amber",
+      "confidence": 0.5,
+      "status": "human_review_required"
+    },
+    {
+      "clause_id": "general_arbitration_01",
+      "gold": "amber",
+      "pred": "green",
+      "confidence": 0.6,
+      "status": "human_review_required"
+    },
+    {
+      "clause_id": "hard_conflicting_scope_01",
+      "gold": "amber",
+      "pred": "red",
+      "confidence": 0.65,
+      "status": "human_review_required"
+    }
+  ]
+}
